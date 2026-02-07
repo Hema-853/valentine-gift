@@ -87,9 +87,10 @@
       tell me something first 💕
     </p>
 
-    <form id="valentineForm">
-      <input type="text" placeholder="Your nickname" required />
-      <textarea rows="4" placeholder="Why do you love me? 😌" required></textarea>
+    <form name="valentine-form" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="valentine-form" />
+      <input type="text" name="nickname" placeholder="Your nickname" required />
+      <textarea name="message" rows="4" placeholder="Why do you love me? 😌" required></textarea>
       <button type="submit">Open My Gift 🎁</button>
     </form>
 
